@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <title>Hotel Holiday International - Menu Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #03e8e8;
+            color: #d73030;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .menu-card {
+            width: 650px;
+            border: 3px solid #18bfa6;
+            border-radius: 15px;
+            background-color: #1d0ec3;
+            box-shadow: 0 0 20px #8b4513;
+            padding: 30px;
+        }
+
+        .restaurant-name {
+            font-size: 38px;
+            font-weight: bold;
+            color: #d06d6d;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px #cc59c4;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            font-style: italic;
+            text-align: center;
+            color: #f79655;
+            text-decoration: underline;
+            margin-bottom: 30px;
+        }
+
+        .menu-section {
+            border: 2px solid #492b04;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 8px #d2b48c;
+            background-color: #fffdf9;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #a0522d;
+            text-transform: capitalize;
+            text-decoration: overline;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .dish-item {
+            margin-bottom: 15px;
+        }
+
+        .dish-name {
+            font-size: 19px;
+            font-weight: bold;
+            color: #4b0082;
+            text-transform: capitalize;
+            transition: transform 0.2s ease;
+            cursor: pointer;
+            display: inline-block;
+            margin: 0;
+        }
+
+        .dish-name:hover {
+            transform: scale(1.1);
+        }
+
+        .dish-description {
+            font-size: 14px;
+            line-height: 1.5;
+            text-indent: 30px;
+            color: #555555;
+            margin: 4px 0 0 0;
+        }
+
+        .special-offer {
+            font-size: 20px;
+            font-weight: bold;
+            color: #a81e1e;
+            background-color: #cdd3c7;
+            text-align: center;
+            text-transform: uppercase;
+         
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-card">
+        <h1 class="restaurant-name">Hotel Holiday International</h1>
+        <p class="tagline">Authentic taste, wonderful memories</p>
+
+        <!-- Starters Section -->
+        <div class="menu-section">
+            <h2 class="section-title">starters & snacks</h2>
+
+            <div class="dish-item">
+                <p class="dish-name">veg manchurian dry</p>
+                <p class="dish-description">Crispy vegetable balls tossed in a spicy, flavorful Manchurian sauce.</p>
+            </div>
+
+            <div class="dish-item">
+                <p class="dish-name">chilli paneer dry</p>
+                <p class="dish-description">Crispy paneer cubes tossed with onions, capsicum, and bold Chinese sauces.
+                </p>
+            </div>
+        </div>
+
+        <!-- Main Course Section -->
+        <div class="menu-section">
+            <h2 class="section-title">veg main course</h2>
+
+            <div class="dish-item">
+                <p class="dish-name">paneer butter masala</p>
+                <p class="dish-description">Soft paneer cubes cooked in a rich, creamy, and buttery tomato gravy.</p>
+            </div>
+
+            <div class="dish-item">
+                <p class="dish-name">dal tadka dhaba style</p>
+                <p class="dish-description">Rustic yellow lentils finished with a smoky garlic and cumin tempering.</p>
+            </div>
+        </div>
+
+        <!-- Special Offer Banner -->
+        <p class="special-offer">Weekend Special: 20% off on all orders!</p>
+    </div>
+
+</body>
+
+</html>
