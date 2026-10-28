@@ -38,11 +38,13 @@
             margin-bottom: 5px;
         }
 
-        .tagline {
+        /* 1. SIBLING SELECTOR: Styles the <p> that comes immediately after <h1> */
+        h1+.tagline {
             font-size: 18px;
             font-style: italic;
             text-align: center;
-            color: #f79655;
+            color: #ffd700;
+            /* Made it brighter using sibling selector */
             text-decoration: underline;
             margin-bottom: 30px;
         }
@@ -65,8 +67,17 @@
             margin-bottom: 15px;
         }
 
-        .dish-item {
+        /*  CHILD SELECTOR: Styles only direct children (.dish-item) inside .menu-section */
+        .menu-section>.dish-item {
             margin-bottom: 15px;
+            padding: 8px;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        /* Hover effect for dish items */
+        .menu-section>.dish-item:hover {
+            background-color: #f0e6d2;
         }
 
         .dish-name {
@@ -99,7 +110,7 @@
             background-color: #cdd3c7;
             text-align: center;
             text-transform: uppercase;
-         
+
             padding: 12px;
             border-radius: 6px;
             margin-top: 30px;
